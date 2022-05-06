@@ -5,7 +5,6 @@ ARG USER=intec
 
 RUN apt update && \
     apt install -y sudo nano grc autoconf gcc make && \
-    apt purge autoconf gcc -y && \
     apt clean && \
     rm -rf /tmp/* && \
     rm -rf /var/lib/apt/lists/* && \
